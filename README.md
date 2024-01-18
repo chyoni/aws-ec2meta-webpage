@@ -4,7 +4,10 @@
 #### Apache2 , PHP 5.4
 #### CentOS/AWS Linux 기준
 ```
-sudo yum -y install httpd php mysql php-mysql git
+sudo -s
+sudo yum -y install httpd php git
+dnf -y localinstall https://dev.mysql.com/get/mysql80-community-release-el9-4.noarch.rpm
+dnf -y install mysql mysql-community-client
 sudo systemctl start httpd
 sudo systemctl enable httpd
 curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
