@@ -10,7 +10,7 @@ dnf -y localinstall https://dev.mysql.com/get/mysql80-community-release-el9-4.no
 dnf -y install mysql mysql-community-client
 sudo systemctl start httpd
 sudo systemctl enable httpd
-sudo cd /var/www/html/ && sudo git clone https://github.com/chyoni/ec2meta-webpage.git
+sudo cd /var/www/html/ && sudo git clone https://github.com/chyoni/aws-ec2meta-webpage.git
 ```
 
 #### AWS EC2 Instance User Data Shell Script 설치 기준
