@@ -10,9 +10,6 @@ dnf -y localinstall https://dev.mysql.com/get/mysql80-community-release-el9-4.no
 dnf -y install mysql mysql-community-client
 sudo systemctl start httpd
 sudo systemctl enable httpd
-curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
 sudo cd /var/www/html/ && sudo git clone https://github.com/kimdragon50/ec2meta-webpage.git
 ```
 
